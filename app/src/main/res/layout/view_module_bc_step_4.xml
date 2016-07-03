@@ -35,7 +35,7 @@
                 android:paddingEnd="@dimen/activity_vertical_margin"
                 android:paddingStart="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/margin_small"
-                android:text="Communication with both suppliers and customers may help to preserve those relationships throught the period of disruption"
+                android:text="Communication with both suppliers and customers may help to preserve those relationships through the period of disruption"
                 android:textColor="@color/white"/>
         </FrameLayout>
 

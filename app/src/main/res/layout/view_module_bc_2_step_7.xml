@@ -25,7 +25,7 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="A disaster can often cause a change in people or organisations spending havits. Have you thought about what you could do to ensure the survival of your business if demand drops?"/>
+            android:text="A disaster can often cause a change in people or organisations' spending habits. Have you thought about what you could do to ensure the survival of your business if demand drops?"/>
 
         <TextView
             style="@style/Font.Body1"
@@ -34,7 +34,7 @@
             android:layout_margin="@dimen/activity_vertical_margin"
             android:background="@color/blue5"
             android:padding="@dimen/activity_vertical_margin"
-            android:text="There are many ways that a business can adapt to changes in demand including:\n\nSeeking alternative customers and/or Producing alternative products/services and/or Downsizing to ride out the perios of reduced demand"/>
+            android:text="There are many ways that a business can adapt to changes in demand including:\n\nSeeking alternative customers and/or Producing alternative products/services and/or Downsizing to ride out the period of reduced demand"/>
 
         <TextView
             style="@style/Font.Body1"

@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Cash Reeerves"
+                    android:text="Cash Reserves"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -235,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Goverment grants or aid"
+                    android:text="Government grants or aid"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -303,7 +303,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Extended credit from supliers"
+                    android:text="Extended credit from suppliers"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>

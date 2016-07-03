@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_small"
-            android:text="Knowing what is essential to keep your business going and hoe to get it is the core of a business continuity plan.\n\nWhat are the key processes, products and/or services which are fundamental to the survival of your business? what can't your business survive without?"/>
+            android:text="Knowing what is essential to keep your business going and how to get it is the core of a business continuity plan.\n\nWhat are the key processes, products and/or services which are fundamental to the survival of your business? What can't your business survive without?"/>
 
         <View
             android:layout_width="match_parent"

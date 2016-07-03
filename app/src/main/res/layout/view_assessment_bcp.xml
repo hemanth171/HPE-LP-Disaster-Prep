@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/activity_vertical_margin"
-            android:text="You have recorded this key information completing Level One. Complet Level Two to build upon this plan"/>
+            android:text="You have recorded this key information completing Level One. Complete Level Two to build upon this plan"/>
 
         <TextView
             style="@style/Font.Header3"

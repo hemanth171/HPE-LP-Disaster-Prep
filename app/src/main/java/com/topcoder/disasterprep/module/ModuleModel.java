@@ -25,7 +25,7 @@ public class ModuleModel {
                             new PageInfo("Staff Contact Details", 8, 0),
                             new PageInfo("Other Contacts", 8, 0),
                             new PageInfo("Other Contacts Further Guidance", 8, 0),
-                            new PageInfo("Other Contacts Details", 8, 0),
+                            new PageInfo("Other Contact Details", 8, 0),
                             new PageInfo("Data Accessibility", 8, 0),
                             new PageInfo("Data Accessibility Further Guidance", 8, 0),
                             new PageInfo("Data Retrieval Detail", 8, 0),
