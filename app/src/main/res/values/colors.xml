@@ -12,6 +12,7 @@
 
     <color name="grey1">#d5d9e0</color>
     <color name="grey2">#f5f5f5</color>
+    <color name="grey3_face_indicator">#caced4</color>
     <color name="white">#ffffff</color>
     <color name="white_transp">#88ffffff</color>
 
