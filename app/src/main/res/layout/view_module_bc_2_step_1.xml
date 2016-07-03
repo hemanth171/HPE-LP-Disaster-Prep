@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:padding="@dimen/margin_small"
+            android:text="Other Contact Details"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="In Level One you listed the following processes/ products/ services as fundamental to keep your business operating"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@color/blue5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Key Processes/products/services:\n\n- Lorem Ipsum Process\n\n- Dolor Sit Process\n\n- Amet Aenan Impsum Process"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Now, think about the roles and skills you need to get these operational."/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Key Processes/products/services:"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Type here..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="It is people that will help you through a crisis so you need to make sure you will have the right people with the right skills. You'll also need to be clear about who is doing what. Clarifying these details before an event will dramatically speed up recovery."
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/activity_horizontal_margin"
+             android:layout_marginRight="@dimen/activity_horizontal_margin"
+             android:clipChildren="false">
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/grade_text"
+        style="@style/Font.SubHeader1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/circle_grey"
+        android:gravity="center"
+        android:text="0"/>
+</FrameLayout>

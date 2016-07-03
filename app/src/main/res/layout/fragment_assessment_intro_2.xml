@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/assessment_2_bg">
+
+                <TextView
+                    style="@style/Font.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:alpha="0.8"
+                    android:background="@color/blue2"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingEnd="@dimen/activity_vertical_margin"
+                    android:paddingStart="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="Your whole community has been affected by a destructive storm. Electricity is lost for four days and watr suplies have been affected. Normal water suply does not resume for 2 weeks."
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/Font.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="Get together with at least 5 of your staff - preferably from a range of functions and with varying seniority."/>
+
+            <TextView
+                style="@style/Font.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="Put the fire scenario to them.\n\nGet them through the scenario and the likely responses to it.\n\nAt the conclusion of these discussions, ask them the following questions"
+                tools:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bcp"
+                    style="@style/Font.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_help"
+                    android:text="See BCP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue3"/>
+
+                <Button
+                    android:id="@+id/answers"
+                    style="@style/Font.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_help"
+                    android:text="Review Answers"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue3"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/start"
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue5"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableRight="@drawable/asses_result_bg"
+        android:gravity="center_vertical|end"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/margin_small"
+        android:text="Get Started"/>
+
+</LinearLayout>

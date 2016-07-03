@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/landing_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            style="@style/Font.Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+        <TextView
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Living Progress"
+            android:textColor="@color/indicator_inactive"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="Create account"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/first_name"
+            style="@style/AppTheme.EditTextGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_user_ico"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="Firstname"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/last_name"
+            style="@style/AppTheme.EditTextGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_user_ico"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="Lastname"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/business_name"
+            style="@style/AppTheme.EditTextGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_business_ico"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="Business Name"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/AppTheme.EditTextGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_email_ico"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/AppTheme.EditTextGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_pass_ico"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/accept_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:theme="@style/AppTheme.ColorSwitchStyle"/>
+
+            <TextView
+                style="@style/Font.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="I accept Terms &amp; Conditions"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/next_step"
+                style="@style/Font.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg4"
+                android:text="create account"/>
+
+            <Button
+                android:id="@+id/login"
+                style="@style/Font.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/button_bg2"
+                android:text="i already have an account"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

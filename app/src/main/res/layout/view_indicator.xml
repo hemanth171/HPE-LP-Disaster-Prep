@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:baselineAligned="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/indicator_left"
+        android:layout_width="@dimen/indicator_width"
+        android:layout_height="6dp"
+        android:background="@color/blue3"/>
+
+    <TextView
+        style="@style/Font.Body2"
+        android:id="@+id/indicator_center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/circle_indicator_complete"
+        android:textColor="@color/white"
+        tools:text="1"/>
+
+    <View
+        android:id="@+id/indicator_right"
+        android:layout_width="@dimen/indicator_width"
+        android:layout_height="6dp"
+        android:background="@color/blue3"/>
+
+</LinearLayout>

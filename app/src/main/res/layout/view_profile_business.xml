@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/margin_small"
+            android:src="@drawable/logo_company"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Font.Header3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/logo"
+            android:text="Doe Corporation"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/logo"
+            android:text="Business Size, Energy"
+            android:textColor="@color/grey_profile"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_grey_profile"
+            android:scaleType="center"
+            android:src="@drawable/icn_phone"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="Day Time Phone"
+            android:textColor="@color/grey_profile"/>
+
+        <TextView
+            style="@style/Font.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="123 456 789"
+            android:textColor="@color/blue1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="44dp"
+        android:background="@color/grey1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_grey_profile"
+            android:scaleType="center"
+            android:src="@drawable/icn_phone"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="Mobile"
+            android:textColor="@color/grey_profile"/>
+
+        <TextView
+            style="@style/Font.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="123 456 789"
+            android:textColor="@color/blue1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="44dp"
+        android:background="@color/grey1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_grey_profile"
+            android:scaleType="center"
+            android:src="@drawable/icn_phone"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="Emergency Contact"
+            android:textColor="@color/grey_profile"/>
+
+        <TextView
+            style="@style/Font.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="123 456 789"
+            android:textColor="@color/blue1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="44dp"
+        android:background="@color/grey1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_grey_profile"
+            android:scaleType="center"
+            android:src="@drawable/icn_home"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Font.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Residential Address"
+                android:textColor="@color/grey_profile"/>
+
+            <TextView
+                style="@style/Font.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123 Lorem Ipsum St, CA, US"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey1"/>
+
+</LinearLayout>

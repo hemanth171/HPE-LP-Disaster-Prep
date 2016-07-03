@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:padding="@dimen/margin_small"
+            android:text="Other Contact Details"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="A disaster can often cause a change in people or organisations spending havits. Have you thought about what you could do to ensure the survival of your business if demand drops?"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@color/blue5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="There are many ways that a business can adapt to changes in demand including:\n\nSeeking alternative customers and/or Producing alternative products/services and/or Downsizing to ride out the perios of reduced demand"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="What strategies might your business follow if demand drops?"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Type here..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

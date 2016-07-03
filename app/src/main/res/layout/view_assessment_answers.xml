@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="You have completed the following exercises that help you to build the resilience of your organization"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_up"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Business Continuity Planning"
+            android:textColor="@color/blue2"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icn_yes_green"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Created/updated key contact lists"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icn_yes_green"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Reviewed data-back-up procedures"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icn_yes_green"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Reflected on resources needed to restore operations"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_up"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Leadership and Culture"
+            android:textColor="@color/blue2"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icn_yes_green"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Reflect upon your strengths and weaknesses as a leader"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableRight="@drawable/icn_yes_green"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Actively engaged staff in developing problem solving skills"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

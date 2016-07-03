@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_up"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Staff Contact Information"
+            android:textColor="@color/blue2"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="No matter how well you have thought through (or planned) for a crisis, the successful recovery of your organisation needs people to make it happen."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:textColor="@color/green1"
+            android:text="Leading Recovery"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="These are our key leadership strengths to utilise, and weaknesses to mitigate, in a crisis:"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:textColor="@color/grey_profile"
+            android:text="Great At"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:text="Organisation and logistics"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:textColor="@color/grey_profile"
+            android:text="Find Challenging"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:text="Reflecting on decisions"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_up"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Networks and Relationships"
+            android:textColor="@color/blue2"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Positive relationships both within your organisation and with other organisations can provide valuable support during crises. They can also be great sources for inspiration and new ideas. When the chips are down during a crisis, those who work togherher tend to come out better off!"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:textColor="@color/green1"
+            android:text="Using your networks"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:textColor="@color/grey_profile"
+            android:text="We plan on contacting key partners (frequency):"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:text="Once a week"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/assessment_bg">
+
+            <TextView
+                style="@style/Font.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:alpha="0.8"
+                android:background="@color/blue2"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingEnd="@dimen/activity_vertical_margin"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/margin_small"
+                android:text="@string/assessment_title"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+        <com.topcoder.disasterprep.assessment_intro.IndicatorProgressView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/control_hint"
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:alpha="0.5"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Slide to left or right to choose your answer"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clipChildren="false">
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:max="4"
+                android:progress="0"/>
+
+            <ImageView
+                android:id="@+id/grade_face"
+                android:layout_width="@dimen/grade_width"
+                android:layout_height="@dimen/grade_width"
+                android:background="@drawable/circle_grey"
+                android:src="@drawable/grade_ico_1"/>
+
+            <TextView
+                android:id="@+id/grade_title"
+                style="@style/Font.Grade"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:text="I don't know"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/grade_hint"
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/margin_small"
+            tools:text="We have successfully done this beore"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    <com.topcoder.disasterprep.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:padding="@dimen/margin_small"
+            android:text="Data Retrieval Detail"/>
+
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="In Level One, you reviewed whether you could retrieve all of your important data if they were affected by a fire?\n\nRemember this might include written and electronic information. If this important data incudes electronic data, then now is the time to consider how you might actually restore the information"/>
+
+        <TextView
+            style="@style/Font.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="What hardware you need? How could you obtain this? What is the actual process of restoring? Who can help if there are problems?"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Hardware needed:"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"
+            android:background="@color/white"
+            android:hint="Type here..."/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="How can this be obtained?"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"
+            android:background="@color/white"
+            android:hint="Type here..."/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="What is the actual process of restoring?"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"
+            android:background="@color/white"
+            android:hint="Type here..."/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Who can help if there are problems?"/>
+
+        <EditText
+            style="@style/Font.SubHeader1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"
+            android:background="@color/white"
+            android:hint="Type here..."/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Disaster Prep</string>
+
+    <string name="landing_title">Welcome</string>
+    <string name="landing_top">to the Red Cross Business Resilience Tool and congratulations
+        on embarking upon your journey to resilience</string>
+    <string name="landing_bottom">Do you want to know your situation?\n
+        Start answering a few questions!</string>
+
+    <string name="login">login</string>
+    <string name="start_now">start now</string>
+    <string name="assessment">Assessment</string>
+    <string name="assessment_title">You have just arrived at work to find fire fighters dampening
+    down the glowing embers of the building holding your key business resources</string>
+    <string name="sign_up">sign up</string>
+
+    <string name="contin">continue</string>
+    <string name="first_welcome">This tool is designed to be completed at your own pace. There are
+    activities in the tool that will take time to complete, often with your staff.\n\nWe encourage
+    you to take the time and get the most out of the activities before continuing on your journey.</string>
+    <string name="result">Result</string>
+    <string name="next">Next</string>
+    <string name="score_low">There might be a few elements\nmissing from your Business\nContinuity Plan</string>
+
+    <string-array name="frequency">
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Once a year</item>
+    </string-array>
+
+    <string-array name="storage">
+        <item>Computer Server</item>
+        <item>Local Storage</item>
+        <item>Cloud Storage</item>
+    </string-array>
+</resources>

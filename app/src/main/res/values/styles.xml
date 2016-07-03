@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue3</item>
+        <item name="colorPrimaryDark">@color/blue_clicked3</item>
+        <item name="colorAccent">@color/blue4</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.EditTextGrey">
+        <item name="colorControlNormal">@color/indicator_inactive</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/indicator_inactive</item>
+        <item name="android:paddingBottom">22dp</item>
+    </style>
+
+
+    <style name="AppTheme.ColorSwitchStyle">
+        <item name="colorControlActivated">@color/blue4</item>
+    </style>
+
+    <style name="TabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TabLayout" parent="@style/AppTheme">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Font">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Font.Header1">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Font.Header2">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Font.Header3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Font.SubHeader1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Font.SubHeader2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Font.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Font.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Font.Body3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Font.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Font.Grade">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <TextView
+        style="@style/Font.Header3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Business Continuity Planning"
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:text="A little bit of pre-planning can help you to master crises with barely a sweat. Your first priority is the well-being of your people, followed by the restoration of core operations"/>
+
+    <Button
+        android:id="@+id/start"
+        style="@style/Font.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg1"
+        android:text="get started"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

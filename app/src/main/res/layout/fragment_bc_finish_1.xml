@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Awesome!"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:src="@drawable/icn_cap_1_big"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Level 1 Badge"
+            android:textColor="@color/white"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="You now have the core parts needed to get through a crisis:"
+            android:textColor="@color/white"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="@dimen/margin_small"
+                android:layout_height="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@drawable/circle_orange1"/>
+
+            <TextView
+                style="@style/Font.SubHeader1"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="The ability to communicate with staff, customers and suppliers."
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="@dimen/margin_small"
+                android:layout_height="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@drawable/circle_orange1"/>
+
+            <TextView
+                style="@style/Font.SubHeader1"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="Access to all importand data."
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="@dimen/margin_small"
+                android:layout_height="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@drawable/circle_orange1"/>
+
+            <TextView
+                style="@style/Font.SubHeader1"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="A clear idea of what parts of your operation need to be the first priority to restore."
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="@dimen/margin_small"
+                android:layout_height="@dimen/margin_small"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@drawable/circle_orange1"/>
+
+            <TextView
+                style="@style/Font.SubHeader1"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:text="An idea of how to do this."
+                android:textColor="@color/white"/>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/next"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg1"
+            android:text="go to next module"/>
+
+        <Button
+            android:id="@+id/dashboard"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg2"
+            android:text="go to dashboard"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

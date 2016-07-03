@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue1"
+                    android:padding="@dimen/margin_small"
+                    tools:src="@drawable/avatar_big"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/Font.Header3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    tools:text="John Wetson"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/Font.SubHeader1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:textColor="@color/white_transp"
+                    tools:text="johnwetson@gmail.com"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue1"
+                android:orientation="horizontal"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:src="@drawable/icn_back"/>
+
+                <TextView
+                    style="@style/Font.Header2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="My Profile"
+                    android:textColor="@color/white"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <include
+                    android:id="@+id/notification"
+                    layout="@layout/menu_notification"/>
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                app:tabBackground="@color/blue1"
+                app:tabIndicatorColor="@color/yellow1"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@android:style/TextAppearance.Medium"
+                app:tabTextColor="@color/white_transp"/>
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
