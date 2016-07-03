@@ -61,6 +61,7 @@
             android:drawableLeft="@drawable/login_user_ico"
             android:drawablePadding="@dimen/margin_small"
             android:hint="Username"
+            android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
             tools:drawableRight="@drawable/icn_error"/>
 
@@ -72,6 +73,7 @@
             android:drawableLeft="@drawable/login_pass_ico"
             android:drawablePadding="@dimen/margin_small"
             android:hint="Password"
+            android:imeOptions="actionDone"
             android:inputType="textPassword"
             tools:drawableRight="@drawable/icn_error"/>
 

@@ -41,7 +41,7 @@
                 android:padding="24dp">
 
                 <TextView
-                    style="@style/Font.Header3"
+                    style="@style/Font.Header2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -51,6 +51,7 @@
                 <com.topcoder.disasterprep.CircleScoreView
                     android:id="@+id/progress_view"
                     android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

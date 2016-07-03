@@ -35,7 +35,7 @@
         style="@style/Font.Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rect_white"
+        android:background="@drawable/rect_grey"
         android:padding="24dp"
         android:text="@string/first_welcome"
         android:gravity="center"/>

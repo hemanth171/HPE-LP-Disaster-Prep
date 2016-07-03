@@ -17,7 +17,9 @@
         <item name="colorControlNormal">@color/indicator_inactive</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorHint">@color/indicator_inactive</item>
-        <item name="android:paddingBottom">22dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawablePadding">8dp</item>
     </style>
 
 
@@ -80,10 +82,11 @@
 
     <style name="Font.Button">
         <item name="android:textSize">16sp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">0dp</item>
     </style>
 
     <style name="Font.Grade">
