@@ -133,7 +133,7 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:text="Positive relationships both within your organisation and with other organisations can provide valuable support during crises. They can also be great sources for inspiration and new ideas. When the chips are down during a crisis, those who work togherher tend to come out better off!"/>
+            android:text="Positive relationships both within your organisation and with other organisations can provide valuable support during crises. They can also be great sources for inspiration and new ideas. When the chips are down during a crisis, those who work together tend to come out better off!"/>
 
         <View
             android:layout_width="match_parent"

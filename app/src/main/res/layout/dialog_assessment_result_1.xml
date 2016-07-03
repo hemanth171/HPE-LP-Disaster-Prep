@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:gravity="center_horizontal"
-                    android:text="You have achieved Level One Investor in Resilience Status."/>
+                    android:text="You have now achieved Level One Investor in Resilience Status."/>
 
                 <TextView
                     style="@style/Font.Body3"

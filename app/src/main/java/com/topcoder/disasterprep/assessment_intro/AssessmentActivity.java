@@ -55,6 +55,7 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
     public void initQuestions(List<AssessmentQuestion> questions) {
         PagerAdapter adapter = new QuestionAdapter(questions);
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setOffscreenPageLimit(questions.size());
         pager.setAdapter(adapter);
         mNavigationView.setPager(pager,
                 new NavigationView.ResultListener() {

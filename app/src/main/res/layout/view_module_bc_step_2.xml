@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_small"
-            android:text="You need to create a list (in any format that suites you) that contains:"/>
+            android:text="You need to create a list (in any format that suits you) that contains:"/>
 
         <TextView
             style="@style/Font.Body3"

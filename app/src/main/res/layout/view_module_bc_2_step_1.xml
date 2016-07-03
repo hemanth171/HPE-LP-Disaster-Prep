@@ -25,7 +25,7 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="In Level One you listed the following processes/ products/ services as fundamental to keep your business operating"/>
+            android:text="In Level One you listed the following processes/products/ services as fundamental to keep your business operating"/>
 
         <TextView
             style="@style/Font.Body1"

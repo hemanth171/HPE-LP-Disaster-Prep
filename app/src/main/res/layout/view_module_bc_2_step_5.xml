@@ -33,7 +33,7 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:text="What hardware you need? How could you obtain this? What is the actual process of restoring? Who can help if there are problems?"/>
+            android:text="What hardware would you need? How could you obtain this? What is the actual process of restoring? Who can help if there are problems?"/>
 
         <View
             android:layout_width="match_parent"

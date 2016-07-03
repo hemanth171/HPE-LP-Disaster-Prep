@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_small">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -55,36 +55,13 @@
                     style="@style/Font.Body1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
                     android:text="Is your staff contact information adequate and up to date?"
                     android:textColor="@color/blue1"/>
 
-                <TextView
-                    android:id="@+id/yes"
-                    style="@style/Font.SubHeader1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/title"
-                    android:layout_marginRight="48dp"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:drawableLeft="@drawable/icn_yes"
-                    android:drawablePadding="@dimen/margin_small"
-                    android:gravity="center_vertical"
-                    android:text="Yes"/>
+                <include layout="@layout/view_yes_no"/>
 
-                <TextView
-                    style="@style/Font.SubHeader1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/title"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="@dimen/margin_small"
-                    android:layout_toRightOf="@id/yes"
-                    android:drawableLeft="@drawable/icn_no"
-                    android:drawablePadding="@dimen/margin_small"
-                    android:gravity="center_vertical"
-                    android:text="No"/>
-
-            </RelativeLayout>
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 
@@ -93,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_small"
-            android:text="Remember that you need to"/>
+            android:text="Remember that you need to:"/>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -118,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/grey2"
                     android:padding="@dimen/margin_small"
-                    android:text="What if the mobile phone network is down or if people cellphones are left in evacuated buildings?"/>
+                    android:text="What if the mobile phone network is down or if people's cellphones are left in evacuated buildings?"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -161,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_small"
-                android:text="Include alternative phone numbers and methods for reaching people with your contact information"/>
+                android:text="Include alternative phone numbers and methods for reaching people with your contact information (emails, home address and phone numbers)"/>
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
