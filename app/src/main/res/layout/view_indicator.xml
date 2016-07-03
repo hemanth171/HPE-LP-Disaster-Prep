@@ -9,7 +9,7 @@
 
     <View
         android:id="@+id/indicator_left"
-        android:layout_width="@dimen/indicator_width"
+        android:layout_width="10dp"
         android:layout_height="6dp"
         android:background="@color/blue3"/>
 
@@ -25,7 +25,7 @@
 
     <View
         android:id="@+id/indicator_right"
-        android:layout_width="@dimen/indicator_width"
+        android:layout_width="30dp"
         android:layout_height="6dp"
         android:background="@color/blue3"/>
 
