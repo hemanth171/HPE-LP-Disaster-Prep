@@ -8,12 +8,14 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.topcoder.disasterprep.module.bc.LockableViewPager;
+
 public class NavigationView extends LinearLayout {
 
     private View mBack;
     private TextView mResult;
     private ProgressBar mProgress;
-    private ViewPager mViewPager;
+    private LockableViewPager mViewPager;
     private ViewPager.SimpleOnPageChangeListener mOnPageChangeListener;
     private boolean mShowProgress;
 
@@ -41,14 +43,18 @@ public class NavigationView extends LinearLayout {
     }
 
     private void editNextButton(int current, int count) {
-        if (current == count - 1) {
+        if (mViewPager.isLocked()) {
+            mResult.setText("Skip");
+        } else if (current == count - 1) {
             mResult.setText(getResources().getString(R.string.result));
         } else if (current + 1 == count - 1) {
+            mResult.setText(getResources().getString(R.string.next));
+        } else {
             mResult.setText(getResources().getString(R.string.next));
         }
     }
 
-    public void setPager(final ViewPager viewPager, final ResultListener resultListener, final StepListener stepListener) {
+    public void setPager(final LockableViewPager viewPager, final ResultListener resultListener, final StepListener stepListener) {
         final int count = viewPager.getAdapter().getCount();
         mViewPager = viewPager;
         if (mShowProgress) {
@@ -72,21 +78,27 @@ public class NavigationView extends LinearLayout {
         mBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int current = viewPager.getCurrentItem();
-                if (0 < current && current < count) {
-                    viewPager.setCurrentItem(current - 1);
+                if (!mViewPager.isLocked()) {
+                    int current = viewPager.getCurrentItem();
+                    if (0 < current && current < count) {
+                        viewPager.setCurrentItem(current - 1);
+                    }
                 }
             }
         });
         mResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int current = viewPager.getCurrentItem();
-                int count = viewPager.getAdapter().getCount();
-                if (0 <= current && current < count - 1) {
-                    viewPager.setCurrentItem(current + 1);
-                } else if (current == count - 1) {
-                    resultListener.showResult();
+                if (!mViewPager.isLocked()) {
+                    int current = viewPager.getCurrentItem();
+                    int count = viewPager.getAdapter().getCount();
+                    if (0 <= current && current < count - 1) {
+                        viewPager.setCurrentItem(current + 1);
+                    } else if (current == count - 1) {
+                        resultListener.showResult();
+                    }
+                } else {
+                    resultListener.showSkip();
                 }
             }
         });
@@ -97,15 +109,9 @@ public class NavigationView extends LinearLayout {
         mProgress.setVisibility(isShown ? VISIBLE : INVISIBLE);
     }
 
-    public interface ResultListener {
-        void showResult();
-    }
-
-    public interface StepListener {
-        /**
-         * @param step 1-based position
-         */
-        void setStep(int step);
+    public void lock(boolean isLock) {
+        mViewPager.setIsLocked(isLock);
+        editNextButton(mViewPager.getCurrentItem(), mViewPager.getAdapter().getCount());
     }
 
     @Override
@@ -114,5 +120,18 @@ public class NavigationView extends LinearLayout {
             mViewPager.removeOnPageChangeListener(mOnPageChangeListener);
         }
         super.onDetachedFromWindow();
+    }
+
+    public interface ResultListener {
+        void showResult();
+
+        void showSkip();
+    }
+
+    public interface StepListener {
+        /**
+         * @param step 1-based position
+         */
+        void setStep(int step);
     }
 }

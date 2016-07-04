@@ -1,11 +1,12 @@
 package com.topcoder.disasterprep.assessment_intro;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class MeasuredViewPager extends ViewPager {
+import com.topcoder.disasterprep.module.bc.LockableViewPager;
+
+public class MeasuredViewPager extends LockableViewPager {
 
     public MeasuredViewPager(Context context) {
         super(context);

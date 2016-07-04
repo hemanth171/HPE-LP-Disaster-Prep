@@ -16,11 +16,14 @@ FUNCTIONALITY:
 
 - Module progress on screen 03-1C_Module BC_Step Progress simulates the rise, as you step through the pages.
 
+- Only BC Level 1 Step 1 will have "Skip" button to demonstrate the functionality.
+
+
+- Click on the home button 03-1A_Module BC_Step 1 moves you to the dashboard.
+
 - Dashboard progress for the Business Continuity Plan 1st and 2nd level simulates the rise, as you go through the modules. 02-0_Dashboard. Other modules also could be changed dynamically, when will be implemented.
 
 - Tapping on the widget on Dashboard header will take user to the corresponding module flow (BC flow implemented).
-
-- Click on the home button 03-1A_Module BC_Step 1 moves you to the dashboard.
 
 - To go to the Profile screen - tap on user avatar in the dashboard screen
 

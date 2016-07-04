@@ -18,4 +18,8 @@ public interface ModuleView {
     void showDashboard();
 
     void showAssessment();
+
+    void showLogin();
+
+    void showSkip();
 }

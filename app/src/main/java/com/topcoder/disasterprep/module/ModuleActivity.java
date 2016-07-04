@@ -13,17 +13,20 @@ import com.topcoder.disasterprep.IntentExtras;
 import com.topcoder.disasterprep.R;
 import com.topcoder.disasterprep.assessment.AssessmentActivity;
 import com.topcoder.disasterprep.dashboard.DashboardActivity;
+import com.topcoder.disasterprep.login.LoginActivity;
 import com.topcoder.disasterprep.module.bc.BCFinishFragment;
 import com.topcoder.disasterprep.module.bc.BCFragment;
 import com.topcoder.disasterprep.module.bc.BCIntroFragment;
 import com.topcoder.disasterprep.module.help.HelpActivity;
 import com.topcoder.disasterprep.module.progress.ModuleProgressActivity;
+import com.topcoder.disasterprep.module.skip.SkipFragment;
 
 public class ModuleActivity extends AppCompatActivity implements View.OnClickListener, ModuleView {
 
     private static final String BC_INTRO_TAG = "bc_intro_tag";
     private static final String BC_TAG = "bc_tag";
     private static final String MODULE_RESULT_TAG = "module_result_tag";
+    private static final String SKIP_TAG = "tag_skip";
 
     private int moduleLevel = 1;
     private View mMenuHelp;
@@ -127,5 +130,23 @@ public class ModuleActivity extends AppCompatActivity implements View.OnClickLis
     public void showAssessment() {
         Intent start = new Intent(this, AssessmentActivity.class);
         startActivity(start);
+    }
+
+    @Override
+    public void showLogin() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.putExtra(IntentExtras.LOGIN_LOGIN, true);
+        startActivity(intent);
+    }
+
+    @Override
+    public void showSkip() {
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+        fragmentTransaction.replace(R.id.container, new SkipFragment(), SKIP_TAG);
+        fragmentTransaction.addToBackStack(SKIP_TAG);
+        fragmentTransaction.commit();
+
     }
 }

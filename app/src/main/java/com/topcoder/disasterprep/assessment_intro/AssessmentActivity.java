@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -15,6 +14,7 @@ import com.topcoder.disasterprep.IntentExtras;
 import com.topcoder.disasterprep.NavigationView;
 import com.topcoder.disasterprep.R;
 import com.topcoder.disasterprep.login.LoginActivity;
+import com.topcoder.disasterprep.module.bc.LockableViewPager;
 
 import java.util.List;
 
@@ -54,7 +54,7 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
     @Override
     public void initQuestions(List<AssessmentQuestion> questions) {
         PagerAdapter adapter = new QuestionAdapter(questions);
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        LockableViewPager pager = (LockableViewPager) findViewById(R.id.pager);
         pager.setOffscreenPageLimit(questions.size());
         pager.setAdapter(adapter);
         mNavigationView.setPager(pager,
@@ -62,6 +62,11 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
                     @Override
                     public void showResult() {
                         new ResultDialog().show(getFragmentManager(), ResultDialog.class.getSimpleName());
+                    }
+
+                    @Override
+                    public void showSkip() {
+
                     }
                 },
                 new NavigationView.StepListener() {

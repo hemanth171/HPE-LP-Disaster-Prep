@@ -2,8 +2,6 @@ package com.topcoder.disasterprep.module.bc;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +13,11 @@ import com.topcoder.disasterprep.module.ModuleView;
 public class BCFragment extends android.app.Fragment implements BCView {
 
     public static final String BC_LEVEL = "bc_level";
-    private ViewPager mPager;
+    private LockableViewPager mPager;
     private NavigationView mNavigation;
     private BCPresenter mPresenter;
     private int level;
+    private BCAdapter mAdapter;
 
     public static BCFragment newInstance(int level) {
         Bundle args = new Bundle();
@@ -55,29 +54,46 @@ public class BCFragment extends android.app.Fragment implements BCView {
     }
 
     private void initViews(View view) {
-        mPager = (ViewPager) view.findViewById(R.id.pager);
+        mPager = (LockableViewPager) view.findViewById(R.id.pager);
         mNavigation = (NavigationView) view.findViewById(R.id.navigation);
     }
 
     @Override
-    public void setSteps(int[] steps) {
-        PagerAdapter adapter = new BCAdapter(level, steps);
-        mPager.setAdapter(adapter);
+    public void setSteps(int[] steps, int[] ids, int page) {
+        mAdapter = new BCAdapter(this.level, steps);
+        View.OnClickListener OrOptionListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mPresenter.onOrOptionClicked(view.getId());
+            }
+        };
+        mAdapter.setListener(page, OrOptionListener, ids);
+        mPager.setAdapter(mAdapter);
         mNavigation.showProgress(true);
         mNavigation.setPager(mPager,
                 new NavigationView.ResultListener() {
                     @Override
                     public void showResult() {
-                        ((ModuleView) getActivity()).showModuleResult(level);
-                        mPresenter.onShowResult(level, mPager.getAdapter().getCount() - 1);
+                        ((ModuleView) getActivity()).showModuleResult(BCFragment.this.level);
+                        mPresenter.onShowResult(BCFragment.this.level, mPager.getAdapter().getCount() - 1);
+                    }
+
+                    @Override
+                    public void showSkip() {
+                        ((ModuleView) getActivity()).showSkip();
                     }
                 },
                 new NavigationView.StepListener() {
                     @Override
                     public void setStep(int step) {
-                        mPresenter.onPageSelected(level, step - 1);
+                        mPresenter.onPageSelected(BCFragment.this.level, step - 1);
                     }
                 });
+    }
+
+    @Override
+    public void lockView(boolean isLock) {
+        mNavigation.lock(isLock);
     }
 
     @Override

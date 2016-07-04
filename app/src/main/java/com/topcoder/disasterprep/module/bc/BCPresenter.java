@@ -7,8 +7,8 @@ import com.topcoder.disasterprep.module.ModuleModel;
 import java.util.Random;
 
 public class BCPresenter extends Presenter<BCView> {
-
     private static final int MAX = 8;
+    private final int[] orOptions = {R.id.yes, R.id.no};
 
     public BCPresenter(BCView view, int level) {
         super(view);
@@ -38,7 +38,10 @@ public class BCPresenter extends Presenter<BCView> {
                         R.layout.view_module_bc_2_step_7};
 
         }
-        view.setSteps(steps);
+        view.setSteps(steps, level == 1 ? orOptions : null, 0); // set id for the 1st level and for the 0 page
+        if (level == 1) {
+            view.lockView(true);
+        }
     }
 
     void onPageSelected(int level, int position) {
@@ -50,5 +53,9 @@ public class BCPresenter extends Presenter<BCView> {
 
     void onShowResult(int level, int lastPosition) {
         ModuleModel.getInstance().setBCPageProgress(level, lastPosition + 1, MAX);
+    }
+
+    void onOrOptionClicked(int id) {
+        view.lockView(false);
     }
 }
