@@ -28,13 +28,7 @@
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:text="Our contact information for key suppliers, customers and other contacts is updated (frequency)"/>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:entries="@array/frequency"
-            android:background="@color/white"
-            android:layout_margin="@dimen/margin_small"/>
+        <include layout="@layout/view_spinner_frequency"/>
 
         <View
             android:layout_width="match_parent"
@@ -50,13 +44,7 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:text="It is stored in:"/>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:entries="@array/storage"
-            android:background="@color/white"
-            android:layout_margin="@dimen/margin_small"/>
+       <include layout="@layout/view_spinner_storage"/>
 
         <View
             android:layout_width="match_parent"
