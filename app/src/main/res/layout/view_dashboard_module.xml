@@ -25,10 +25,7 @@
             android:padding="@dimen/margin_small"
             tools:text="Business Continuity Plan"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/score_inactive"/>
+        <include layout="@layout/view_separator"/>
 
         <com.topcoder.disasterprep.dashboard.ModuleView
             android:id="@+id/module"

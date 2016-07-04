@@ -32,10 +32,7 @@
             android:paddingTop="@dimen/margin_small"
             android:text="No matter how well you have thought through (or planned) for a crisis, the successful recovery of your organisation needs people to make it happen."/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey1"/>
+        <include layout="@layout/view_separator"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -45,8 +42,8 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:textColor="@color/green1"
-            android:text="Leading Recovery"/>
+            android:text="Leading Recovery"
+            android:textColor="@color/green1"/>
 
         <TextView
             style="@style/Font.Body3"
@@ -67,8 +64,8 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:textColor="@color/grey_profile"
-            android:text="Great At"/>
+            android:text="Great At"
+            android:textColor="@color/grey_profile"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -94,8 +91,8 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:textColor="@color/grey_profile"
-            android:text="Find Challenging"/>
+            android:text="Find Challenging"
+            android:textColor="@color/grey_profile"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -107,10 +104,7 @@
             android:paddingRight="@dimen/activity_vertical_margin"
             android:text="Reflecting on decisions"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey1"/>
+        <include layout="@layout/view_separator"/>
 
         <TextView
             style="@style/Font.Header3"
@@ -135,10 +129,7 @@
             android:paddingTop="@dimen/margin_small"
             android:text="Positive relationships both within your organisation and with other organisations can provide valuable support during crises. They can also be great sources for inspiration and new ideas. When the chips are down during a crisis, those who work together tend to come out better off!"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey1"/>
+        <include layout="@layout/view_separator"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -148,8 +139,8 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:textColor="@color/green1"
-            android:text="Using your networks"/>
+            android:text="Using your networks"
+            android:textColor="@color/green1"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -159,8 +150,8 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/margin_small"
-            android:textColor="@color/grey_profile"
-            android:text="We plan on contacting key partners (frequency):"/>
+            android:text="We plan on contacting key partners (frequency):"
+            android:textColor="@color/grey_profile"/>
 
         <TextView
             style="@style/Font.Body2"
@@ -184,10 +175,7 @@
             android:text="Change Readiness"
             android:textColor="@color/blue2"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey1"/>
+        <include layout="@layout/view_separator"/>
 
         <TextView
             style="@style/Font.Header3"

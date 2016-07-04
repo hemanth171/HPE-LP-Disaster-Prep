@@ -35,10 +35,7 @@
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:text="What hardware would you need? How could you obtain this? What is the actual process of restoring? Who can help if there are problems?"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey1"/>
+        <include layout="@layout/view_separator"/>
 
         <TextView
             style="@style/Font.Body1"

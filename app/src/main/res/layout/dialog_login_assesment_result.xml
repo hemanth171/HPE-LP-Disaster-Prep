@@ -30,15 +30,12 @@
         android:gravity="center_horizontal"
         android:text="You can login now to see your results. All of your progress will be saved each time your exit the tool."/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:background="@color/indicator_inactive"/>
+    <include layout="@layout/view_separator"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:orientation="horizontal">
 
         <Button

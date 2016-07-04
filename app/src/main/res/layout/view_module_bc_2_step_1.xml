@@ -60,6 +60,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/grey1"/>
 
         <TextView
