@@ -2,9 +2,9 @@
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/landing_signup"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_signup">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,8 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/login_user_ico"
-            android:drawablePadding="@dimen/margin_small"
             android:hint="Firstname"
+            android:imeOptions="actionNext"
             android:inputType="textCapWords"/>
 
         <EditText
@@ -59,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/login_user_ico"
-            android:drawablePadding="@dimen/margin_small"
             android:hint="Lastname"
             android:inputType="textCapWords"/>
 
@@ -69,7 +68,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/login_business_ico"
-            android:drawablePadding="@dimen/margin_small"
             android:hint="Business Name"
             android:inputType="textCapWords"/>
 
@@ -79,7 +77,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/login_email_ico"
-            android:drawablePadding="@dimen/margin_small"
             android:hint="Email"
             android:inputType="textEmailAddress"/>
 
@@ -89,7 +86,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/login_pass_ico"
-            android:drawablePadding="@dimen/margin_small"
             android:hint="Password"
             android:inputType="textPassword"/>
 

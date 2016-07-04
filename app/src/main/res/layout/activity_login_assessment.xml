@@ -72,10 +72,15 @@
                 <android.support.v7.widget.AppCompatSeekBar
                     android:id="@+id/seek"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_height="44dp"
                     android:max="4"
                     android:progress="0"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/rect_face_slider"/>
 
                 <ImageView
                     android:id="@+id/grade_face"
