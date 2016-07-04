@@ -24,17 +24,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="Our contact information for key suppliers, customers and other contacts is updated (frequency)"/>
 
         <include layout="@layout/view_spinner_frequency"/>
 
         <View
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/margin_small"
-            android:layout_marginBottom="@dimen/margin_small"
             android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/grey1"/>
 
         <TextView
@@ -42,23 +42,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
             android:text="It is stored in:"/>
 
        <include layout="@layout/view_spinner_storage"/>
 
         <View
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/margin_small"
-            android:layout_marginBottom="@dimen/margin_small"
             android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/grey1"/>
 
         <TextView
             style="@style/Font.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/blue5"
-            android:layout_margin="@dimen/margin_small"
             android:padding="@dimen/margin_small"
             android:text="TIP - How would other members of your team access this information?"/>
 

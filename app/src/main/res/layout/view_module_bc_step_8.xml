@@ -27,9 +27,7 @@
             android:text="Lorem ipsum dolor consectetur adipiscing elit."/>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,8 +39,8 @@
                     style="@style/Font.SubHeader1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/button_check"
                     android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_check"
                     android:checked="false"/>
 
                 <TextView
@@ -59,9 +57,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,8 +69,8 @@
                     style="@style/Font.SubHeader1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/button_check"
                     android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_check"
                     android:checked="false"/>
 
                 <TextView
@@ -91,9 +87,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins.all">
 
             <LinearLayout
                 android:layout_width="match_parent"

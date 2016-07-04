@@ -23,44 +23,56 @@
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="Key data is stored in/backed up by:"/>
 
         <EditText
             style="@style/Font.SubHeader1"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="@dimen/margin_small"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/white"
-            android:hint="Type here..."/>
+            android:gravity="top"
+            android:hint="Type here..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"/>
 
         <View
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/margin_small"
-            android:layout_marginBottom="@dimen/margin_small"
             android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/grey1"/>
 
         <TextView
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="Key information needed to retrieve stored/backed up data is:"/>
 
         <EditText
             style="@style/Font.SubHeader1"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="@dimen/margin_small"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:background="@color/white"
-            android:hint="Type here..."/>
+            android:gravity="top"
+            android:hint="Type here..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/margin_small"/>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -43,20 +43,24 @@
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="You need to create a list (in any format that suits you) that contains:"/>
 
         <TextView
             style="@style/Font.Body3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="Tap the checkmark if you completed the task"/>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,8 +72,8 @@
                     style="@style/Font.SubHeader1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/button_check"
                     android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_check"
                     android:checked="false"/>
 
                 <TextView
@@ -86,9 +90,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -100,8 +102,8 @@
                     style="@style/Font.SubHeader1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/button_check"
                     android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_check"
                     android:checked="false"/>
 
                 <TextView
@@ -118,9 +120,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,8 +129,8 @@
                 android:padding="@dimen/margin_small">
 
                 <CheckBox
-                    style="@style/Font.SubHeader1"
                     android:id="@+id/yes"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -152,9 +152,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -180,9 +178,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins">
 
             <LinearLayout
                 android:layout_width="match_parent"

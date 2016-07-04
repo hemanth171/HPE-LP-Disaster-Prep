@@ -28,10 +28,10 @@
                 style="@style/Font.Header2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="end"
                 android:layout_weight="1"
-                android:textColor="@color/blue1"
-                android:text="View Plan"/>
+                android:gravity="end"
+                android:text="View Plan"
+                android:textColor="@color/blue1"/>
 
         </LinearLayout>
 
@@ -59,57 +59,57 @@
             style="@style/Font.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="Take a step back: does this all sound doable?"/>
 
         <TextView
             style="@style/Font.Body3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="Are you happy with your answers in terms of the resources and time frame involved? If not, you may want to consider investigating in mitigation or some more advanced planning. We'll be covering that in Level 2."/>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins.all">
 
             <TextView
                 style="@style/Font.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_small"
-                android:textColor="@color/blue1"
-                android:text="Send me back! I'd like to have another crack at determining those key proceses, resources and ways that we could restore these."/>
+                android:text="Send me back! I'd like to have another crack at determining those key proceses, resources and ways that we could restore these."
+                android:textColor="@color/blue1"/>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins.all">
 
             <TextView
                 style="@style/Font.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_small"
-                android:textColor="@color/blue1"
-                android:text="I'm looking forward to developing these ideas further in Level 2"/>
+                android:text="I'm looking forward to developing these ideas further in Level 2"
+                android:textColor="@color/blue1"/>
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small">
+            style="@style/margins.all">
 
             <TextView
                 style="@style/Font.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_small"
-                android:textColor="@color/blue1"
-                android:text="I'm really happy with my ideas for key processes, resources and ways to restore them"/>
+                android:text="I'm really happy with my ideas for key processes, resources and ways to restore them"
+                android:textColor="@color/blue1"/>
 
         </android.support.v7.widget.CardView>
 
