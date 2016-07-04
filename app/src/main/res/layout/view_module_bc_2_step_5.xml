@@ -30,9 +30,9 @@
             style="@style/Font.Body2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:text="What hardware would you need? How could you obtain this? What is the actual process of restoring? Who can help if there are problems?"/>
 
         <View
@@ -44,78 +44,49 @@
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="Hardware needed:"/>
 
-        <EditText
-            style="@style/Font.SubHeader1"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
-            android:background="@color/white"
-            android:hint="Type here..."/>
+        <include layout="@layout/view_input"/>
 
         <TextView
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="How can this be obtained?"/>
 
-        <EditText
-            style="@style/Font.SubHeader1"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
-            android:background="@color/white"
-            android:hint="Type here..."/>
+        <include layout="@layout/view_input"/>
 
         <TextView
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
             android:text="What is the actual process of restoring?"/>
 
-        <EditText
-            style="@style/Font.SubHeader1"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
-            android:background="@color/white"
-            android:hint="Type here..."/>
+        <include layout="@layout/view_input"/>
 
         <TextView
             style="@style/Font.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            android:text="Who can help if there are problems?"/>
-
-        <EditText
-            style="@style/Font.SubHeader1"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_marginBottom="@dimen/margin_small"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"
-            android:background="@color/white"
-            android:hint="Type here..."/>
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Who can help if there are problems?"/>
+
+        <include layout="@layout/view_input"/>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

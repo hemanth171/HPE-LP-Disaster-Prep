@@ -44,16 +44,7 @@
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:text="What strategies might your business follow if demand drops?"/>
 
-        <EditText
-            style="@style/Font.SubHeader1"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            android:background="@color/white"
-            android:gravity="top"
-            android:hint="Type here..."
-            android:inputType="textMultiLine"
-            android:padding="@dimen/margin_small"/>
+        <include layout="@layout/view_input"/>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
