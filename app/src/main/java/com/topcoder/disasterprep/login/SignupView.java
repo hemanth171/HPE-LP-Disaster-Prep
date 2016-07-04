@@ -7,7 +7,7 @@ public interface SignupView {
 
     void showAcceptedError();
 
-    void showEmptyError();
+    void showFillError(String error);
 
     Context getViewContext();
 }

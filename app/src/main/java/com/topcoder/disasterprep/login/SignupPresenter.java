@@ -12,8 +12,9 @@ public class SignupPresenter extends Presenter<SignupView> {
     }
 
     void onSignUp(String firstName, String lastName, String businessName, String email, String password, boolean accepted) {
-        if (!valid(firstName, lastName, businessName, email, password)) {
-            view.showEmptyError();
+        String error = valid(firstName, lastName, businessName, email, password);
+        if (!TextUtils.isEmpty(error)) {
+            view.showFillError(error);
         } else if (!accepted) {
             view.showAcceptedError();
         } else {
@@ -22,8 +23,13 @@ public class SignupPresenter extends Presenter<SignupView> {
         }
     }
 
-    private boolean valid(String firstName, String lastName, String businessName, String email, String password) {
-        return !TextUtils.isEmpty(firstName) && !TextUtils.isEmpty(lastName) &&
-                !TextUtils.isEmpty(businessName) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password);
+    private String valid(String firstName, String lastName, String businessName, String email, String password) {
+        if (TextUtils.isEmpty(firstName) || TextUtils.isEmpty(lastName) ||
+                TextUtils.isEmpty(businessName) || TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
+            return "Fill all fields";
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            return "Add valid email";
+        }
+        return null;
     }
 }

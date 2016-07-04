@@ -11,7 +11,6 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.topcoder.disasterprep.Presenter;
 import com.topcoder.disasterprep.R;
 
 public class SignupFragment extends Fragment implements View.OnClickListener, SignupView {
@@ -72,8 +71,8 @@ public class SignupFragment extends Fragment implements View.OnClickListener, Si
     }
 
     @Override
-    public void showEmptyError() {
-        Toast.makeText(getActivity(), "Fill all fields", Toast.LENGTH_LONG).show();
+    public void showFillError(String error) {
+        Toast.makeText(getActivity(), error, Toast.LENGTH_LONG).show();
     }
 
     @Override
