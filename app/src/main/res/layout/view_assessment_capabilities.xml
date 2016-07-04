@@ -171,6 +171,35 @@
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:text="Once a week"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_down"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Change Readiness"
+            android:textColor="@color/blue2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icn_down"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="Employee Resilience"
+            android:textColor="@color/blue2"/>
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
