@@ -77,12 +77,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Primary and alternative contact numbers"
+                    android:text="@string/module_bc_step_2_p1"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -107,12 +107,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Addresses and Email (if applicable)"
+                    android:text="@string/module_bc_step_2_p2"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -139,12 +139,12 @@
 
                 <TextView
                     android:id="@+id/title"
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Emergency contact information (close relatives or friends)"
+                    android:text="@string/module_bc_step_2_p3"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>

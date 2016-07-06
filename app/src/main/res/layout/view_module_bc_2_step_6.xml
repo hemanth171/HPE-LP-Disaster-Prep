@@ -60,12 +60,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Cash Reserves"
+                    android:text="@string/module_bc_2_step_6_p1"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -94,12 +94,12 @@
                     android:checked="true"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Bank borrowing facilities\n(overdraw)"
+                    android:text="@string/module_bc_2_step_6_p2"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -128,12 +128,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Insurance claims"
+                    android:text="@string/module_bc_2_step_6_p3"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -162,12 +162,12 @@
                     android:checked="true"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Friends snd Family"
+                    android:text="@string/module_bc_2_step_6_p4"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -196,12 +196,12 @@
                     android:checked="true"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Personal resources or loans"
+                    android:text="@string/module_bc_2_step_6_p5"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -230,12 +230,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Government grants or aid"
+                    android:text="@string/module_bc_2_step_6_p6"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -264,12 +264,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Sale of goods/assets"
+                    android:text="@string/module_bc_2_step_6_p7"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -298,12 +298,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Extended credit from suppliers"
+                    android:text="@string/module_bc_2_step_6_p8"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -332,12 +332,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Advance payment from customers"
+                    android:text="@string/module_bc_2_step_6_p9"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>

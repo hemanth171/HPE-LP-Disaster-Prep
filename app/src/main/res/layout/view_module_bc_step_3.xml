@@ -47,12 +47,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Home Phone Number"
+                    android:text="@string/module_bc_step_3_p1"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -77,12 +77,12 @@
                     android:checked="true"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Mobile Phone Number"
+                    android:text="@string/module_bc_step_3_p2"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -107,12 +107,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Emergency Contact Information"
+                    android:text="@string/module_bc_step_3_p3"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -137,12 +137,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Email Address"
+                    android:text="@string/module_bc_step_3_p4"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -169,12 +169,12 @@
 
                 <TextView
                     android:id="@+id/title"
-                    style="@style/Font.Body1"
+                    style="@style/Font.SubHeader1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="Residential Address"
+                    android:text="@string/module_bc_step_3_p5"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
