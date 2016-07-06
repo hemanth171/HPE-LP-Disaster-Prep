@@ -147,6 +147,5 @@ public class ModuleActivity extends AppCompatActivity implements View.OnClickLis
         fragmentTransaction.replace(R.id.container, new SkipFragment(), SKIP_TAG);
         fragmentTransaction.addToBackStack(SKIP_TAG);
         fragmentTransaction.commit();
-
     }
 }
