@@ -28,7 +28,7 @@
             android:src="@drawable/icn_cap_2_big"/>
 
         <TextView
-            style="@style/Font.Header3"
+            style="@style/Font.SubHeader1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
