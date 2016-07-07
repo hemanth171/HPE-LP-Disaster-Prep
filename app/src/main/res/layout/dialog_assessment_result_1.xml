@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <android.support.v4.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.topcoder.disasterprep.CircleScoreView
+            android:id="@+id/progress_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="YOU DID IT! CONGRATULATIONS"/>
 
-                <com.topcoder.disasterprep.CircleScoreView
-                    android:id="@+id/progress_view"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/assessment_result_1_title"/>
 
-            <TextView
-                style="@style/Font.SubHeader2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:text="YOU DID IT! CONGRATULATIONS"/>
+        <TextView
+            style="@style/Font.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="This certificate is valid for one year.\n\nPeople, markets, and environments are constantly changing. Resilience is not a one off project but needs constantly revisiting to ensure plans and actions are based on the current situation. We'll send you a reminder when it is time to do this."/>
 
-            <TextView
-                    style="@style/Font.SubHeader1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:gravity="center_horizontal"
-                    android:text="You have now achieved Level One Investor in Resilience Status."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
-                <TextView
-                    style="@style/Font.Body3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:text="This certificate is valid for one year.\n\nPeople, markets, and environments are constantly changing. Resilience is not a one off project but needs constantly revisiting to ensure plans and actions are based on the current situation. We'll send you a reminder when it is time to do this."/>
+        <Button
+            android:id="@+id/next"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg3"
+            android:text="go to next module"/>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
+        <Button
+            android:id="@+id/dashboard"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg2"
+            android:text="go to dashboard"/>
 
-                <Button
-                    android:id="@+id/next"
-                    style="@style/Font.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg3"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:text="go to next module"/>
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/dashboard"
-                    style="@style/Font.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:background="@drawable/button_bg2"
-                    android:text="go to dashboard"/>
-
-            </LinearLayout>
-
-    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.NestedScrollView>
