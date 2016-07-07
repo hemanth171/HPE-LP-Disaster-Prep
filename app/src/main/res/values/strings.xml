@@ -52,6 +52,10 @@
     <string name="assessment_result_1_title">You have now achieved Level One <b>Investor in Resilience Status.</b></string>
     <string name="assessment_result_2_title">It seems you and your staff think there might be a bit more work to do to obtain <b>Level Two Investor in Resilience status.</b></string>
 
+    <string name="module_bc_step_11_b1"><b>Send me back!</b> I\'d like to have another crack at determining those key proceses, resources and ways that we could restore these.</string>
+    <string name="module_bc_step_11_b2"><b>I\'m looking forward to developing these ideas further in Level 2</b></string>
+    <string name="module_bc_step_11_b3"><b>I\'m really happy with my ideas for key processes, resources and ways to restore them</b></string>
+
     <string-array name="frequency">
         <item>Monthly</item>
         <item>Weekly</item>

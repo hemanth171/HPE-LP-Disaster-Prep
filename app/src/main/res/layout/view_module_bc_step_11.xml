@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -74,46 +75,52 @@
             android:layout_marginRight="@dimen/activity_vertical_margin"
             android:text="Are you happy with your answers in terms of the resources and time frame involved? If not, you may want to consider investigating in mitigation or some more advanced planning. We'll be covering that in Level 2."/>
 
-        <FrameLayout
-            style="@style/margins.all">
+        <android.support.v7.widget.CardView
+            style="@style/margins.all"
+            app:cardCornerRadius="@dimen/button_corner"
+            app:cardPreventCornerOverlap="false">
 
             <TextView
-                style="@style/Font.Body2"
+                style="@style/Font.Body3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rect_blue_border"
                 android:padding="@dimen/margin_small"
-                android:text="Send me back! I'd like to have another crack at determining those key proceses, resources and ways that we could restore these."
+                android:text="@string/module_bc_step_11_b1"
                 android:textColor="@color/blue1"/>
-        </FrameLayout>
+        </android.support.v7.widget.CardView>
 
-        <FrameLayout
-            style="@style/margins.all">
+        <android.support.v7.widget.CardView
+            style="@style/margins.all"
+            app:cardCornerRadius="@dimen/button_corner"
+            app:cardPreventCornerOverlap="false">
 
             <TextView
-                style="@style/Font.Body2"
+                style="@style/Font.Body3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rect_blue_border"
                 android:padding="@dimen/margin_small"
-                android:text="I'm looking forward to developing these ideas further in Level 2"
+                android:text="@string/module_bc_step_11_b2"
                 android:textColor="@color/blue1"/>
 
-        </FrameLayout>
+        </android.support.v7.widget.CardView>
 
-        <FrameLayout
-            style="@style/margins.all">
+        <android.support.v7.widget.CardView
+            style="@style/margins.all"
+            app:cardCornerRadius="@dimen/button_corner"
+            app:cardPreventCornerOverlap="false">
 
             <TextView
-                style="@style/Font.Body2"
+                style="@style/Font.Body3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rect_blue_border"
                 android:padding="@dimen/margin_small"
-                android:text="I'm really happy with my ideas for key processes, resources and ways to restore them"
+                android:text="@string/module_bc_step_11_b3"
                 android:textColor="@color/blue1"/>
 
-        </FrameLayout>
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
