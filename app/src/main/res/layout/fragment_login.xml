@@ -137,12 +137,14 @@
 
     <TextView
         style="@style/Font.Button"
+        android:id="@+id/forgot_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:gravity="center_horizontal"
         android:text="forgot password"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:clickable="true"/>
 
 
 </LinearLayout>

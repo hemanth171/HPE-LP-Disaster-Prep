@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.dashboard;
 
 import android.content.Context;
@@ -22,6 +25,12 @@ import com.topcoder.disasterprep.profile.ProfileActivity;
 
 import java.util.List;
 
+/**
+ * The activity for the dashboard screen
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 public class DashboardActivity extends AppCompatActivity implements DashboardView, View.OnClickListener {
 
     private ViewGroup mScores;
@@ -83,13 +92,40 @@ public class DashboardActivity extends AppCompatActivity implements DashboardVie
         mAdapter.addPlan(module);
     }
 
+    /**
+     * Open the module screen of the given module type.
+     *
+     * @param moduleType the module type
+     */
     @Override
-    public void openBCModule() {
-        Intent start = new Intent(this, ModuleActivity.class);
-        start.putExtra(IntentExtras.MODULE_BC, true);
-        start.putExtra(IntentExtras.MODULE_INTRO, true);
-        startActivity(start);
+    public void openModule(int moduleType) {
+        Intent start = ModuleActivity.newIntentFromStart(this, moduleType);
+
+        if (start != null) {
+            startActivity(start);
+        } else {
+            showNotImplemented();
+        }
     }
+
+    /**
+     * Continue to the current level of module of the given module type
+     *
+     * @param moduleType the module type
+     * @param level the current level
+     * @param page the current page step
+     */
+    @Override
+    public void continueInModule(int moduleType, int level, int page) {
+        Intent start = ModuleActivity.newIntentSkipTo(this, moduleType, level, page);
+
+        if (start != null) {
+            startActivity(start);
+        } else {
+            showNotImplemented();
+        }
+    }
+
 
     @Override
     public void showNotImplemented() {

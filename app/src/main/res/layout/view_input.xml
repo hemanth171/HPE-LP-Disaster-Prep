@@ -14,4 +14,5 @@
     android:hint="Type here..."
     android:inputType="textMultiLine"
     android:padding="@dimen/margin_small"
+    android:imeOptions="actionDone"
     tools:showIn="@layout/view_module_bc_step_9"/>

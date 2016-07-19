@@ -22,40 +22,9 @@
     <string name="next">Next</string>
     <string name="score_low">There might be a few elements\nmissing from your Business\nContinuity Plan</string>
 
-    <string name="module_bc_2_step_6_p1"><b>Cash Reserves</b></string>
-    <string name="module_bc_2_step_6_p2"><b>Bank borrowing facilities\n</b>(overdraw)</string>
-    <string name="module_bc_2_step_6_p3"><b>Insurance claims</b></string>
-    <string name="module_bc_2_step_6_p4"><b>Friends snd Family</b></string>
-    <string name="module_bc_2_step_6_p5"><b>Personal resources or loans</b></string>
-    <string name="module_bc_2_step_6_p6"><b>Government grants or aid</b></string>
-    <string name="module_bc_2_step_6_p7"><b>Sale of goods/assets</b></string>
-    <string name="module_bc_2_step_6_p8"><b>Extended credit from suppliers</b></string>
-    <string name="module_bc_2_step_6_p9"><b>Advance payment from customers</b></string>
-
-    <string name="module_bc_step_2_p1"><b>Primary and alternative contact numbers</b></string>
-    <string name="module_bc_step_2_p2"><b>Addresses and Email </b>(if applicable)</string>
-    <string name="module_bc_step_2_p3"><b>Emergency contact information </b>(close relatives or friends)</string>
-
-    <string name="module_bc_step_3_p1"><b>Home Phone Number</b></string>
-    <string name="module_bc_step_3_p2"><b>Mobile Phone Number</b></string>
-    <string name="module_bc_step_3_p3"><b>Emergency Contact Information</b></string>
-    <string name="module_bc_step_3_p4"><b>Email Address</b></string>
-    <string name="module_bc_step_3_p5"><b>Residential Address</b></string>
-
-    <string name="module_bc_step_5_p1"><b>Key Suppliers</b></string>
-    <string name="module_bc_step_5_p2"><b>Customers</b></string>
-    <string name="module_bc_step_5_p3"><b>Other Contacts</b></string>
-
-    <string name="module_bc_step_8_p1"><b>Aenean euismod</b></string>
-    <string name="module_bc_step_8_p2"><b>Proin gravida dolor</b></string>
-
-    <string name="assessment_result_1_title">You have now achieved Level One <b>Investor in Resilience Status.</b></string>
-    <string name="assessment_result_2_title">It seems you and your staff think there might be a bit more work to do to obtain <b>Level Two Investor in Resilience status.</b></string>
-
-    <string name="module_bc_step_11_b1"><b>Send me back!</b> I\'d like to have another crack at determining those key proceses, resources and ways that we could restore these.</string>
-    <string name="module_bc_step_11_b2"><b>I\'m looking forward to developing these ideas further in Level 2</b></string>
-    <string name="module_bc_step_11_b3"><b>I\'m really happy with my ideas for key processes, resources and ways to restore them</b></string>
-
+    <!-- NR -->
+    <string name="nr_lv1_s1_challenge"><![CDATA[Today’s challenge is to go and work on one of these relationships. Pick up the phone or go knock on a door and initiate a <font color="#5aa700">"Hi, how are you doing?"</font> conversation.]]></string>
+    <string name="nr_lv2_s4_question"><![CDATA[<b>Put this level’s scenario to them. Get your staff to identify the potential challenges they may face outside of work in this emergency</b> (e.g. child care, transportation, community responsibilities, food, lack of water). <b>And then ask them ways which they could help each other and ways the organisation could help them.</b>]]></string>
     <string-array name="frequency">
         <item>Monthly</item>
         <item>Weekly</item>
@@ -63,9 +32,16 @@
         <item>Once a year</item>
     </string-array>
 
+    <string-array name="fake">
+        <item>Lorem lpsum</item>
+        <item>Dolor Sit Amet</item>
+    </string-array>
+
     <string-array name="storage">
         <item>Computer Server</item>
         <item>Local Storage</item>
         <item>Cloud Storage</item>
     </string-array>
+
+
 </resources>

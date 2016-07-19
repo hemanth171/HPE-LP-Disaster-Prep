@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="Unity of Purpose"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="In Level One, you were asked to review the core purpose of your business and state this in 3-4 sentences.  Now, you need to find out if the rest of your team are as clear."/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Ask each staff member to state what your business is about in 3-4 sentences or less.Did you get different answers?"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:id="@+id/cr_lv2_s2_different"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="Very different"
+            android:textColor="@drawable/button_orange_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:id="@+id/cr_lv2_s2_mixture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center_horizontal"
+            android:text="A real mixture"
+            android:textColor="@drawable/button_orange_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:id="@+id/cr_lv2_s2_similar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center_horizontal"
+            android:text="Very similiar"
+            android:textColor="@drawable/button_orange_text_color"
+            android:clickable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Are you clear about what your organisation is trying to achieve?  In a crisis, speedy decisions are often needed without all of the information you may normally rely on.  You and your team need to be really clear about just what your business is all about."/>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

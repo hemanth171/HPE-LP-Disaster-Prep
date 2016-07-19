@@ -1,11 +1,20 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.assessment_intro;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.topcoder.disasterprep.module.bc.LockableViewPager;
+import com.topcoder.disasterprep.module.submodule.LockableViewPager;
 
+/**
+ * The custom view pager
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 public class MeasuredViewPager extends LockableViewPager {
 
     public MeasuredViewPager(Context context) {

@@ -12,6 +12,9 @@ import com.topcoder.disasterprep.IntentExtras;
 import com.topcoder.disasterprep.R;
 import com.topcoder.disasterprep.assessment_certificate.AssessmentInfoActivity;
 import com.topcoder.disasterprep.dashboard.DashboardActivity;
+import com.topcoder.disasterprep.dashboard.DashboardModel;
+import com.topcoder.disasterprep.module.LCModuleActivity;
+import com.topcoder.disasterprep.module.ModuleActivity;
 
 public class AssessmentActivity extends AppCompatActivity implements AssessmentView {
 
@@ -36,6 +39,10 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
             FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.container, IntroFragment.newInstance(level));
             fragmentTransaction.commit();
+        } else {
+            // show next LC module
+            Intent intent = ModuleActivity.newIntentFromStart(this, DashboardModel.LC_MODULE_TYPE);
+            startActivity(intent);
         }
     }
 

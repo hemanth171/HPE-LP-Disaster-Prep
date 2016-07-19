@@ -18,21 +18,41 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".assessment_intro.AssessmentActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".dashboard.DashboardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoTitleBar"/>
+            android:theme="@style/AppTheme.NoTitleBar">
+        </activity>
+
         <activity
             android:name=".profile.ProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitleBar"/>
         <activity
-            android:name=".module.ModuleActivity"
+            android:name=".module.BCModuleActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitleBar"/>
+        <activity
+            android:name=".module.LCModuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LC"/>
+        <activity
+            android:name=".module.CRModuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CR"/>
+        <activity
+            android:name=".module.NRModuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NR"/>
+        <activity
+            android:name=".module.ERModuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ER"/>
+
         <activity
             android:name=".module.progress.ModuleProgressActivity"
             android:screenOrientation="portrait"

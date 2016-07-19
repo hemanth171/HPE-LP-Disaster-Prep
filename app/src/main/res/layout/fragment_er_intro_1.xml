@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/er_intro_1_bg">
+
+
+    <TextView
+        style="@style/Font.Header3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Employee Resilience"
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="center_vertical"
+        android:text="An organisation cannot be resilient without staff that cope well with change.  If employees have the ability and resources to embrace change, the organisation will be better able to recover and grab opportunities that arise."
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/start"
+        style="@style/Font.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_red_bg"
+        android:text="get started"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

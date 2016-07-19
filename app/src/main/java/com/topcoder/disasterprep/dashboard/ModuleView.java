@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.dashboard;
 
 import android.content.Context;
@@ -15,6 +18,12 @@ import android.widget.TextView;
 
 import com.topcoder.disasterprep.R;
 
+/**
+ * The custom view for the module
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 public class ModuleView extends LinearLayout {
 
     public ModuleView(Context context) {
@@ -51,6 +60,11 @@ public class ModuleView extends LinearLayout {
         }
     }
 
+    /**
+     * Set the children for the certificate and plan module
+     *
+     * @param module the module data
+     */
     void setPlanChildren(Module module) {
         removeAllViews();
         for (int i = 0, size = module.progress.length; i < size; i++) {
@@ -60,7 +74,7 @@ public class ModuleView extends LinearLayout {
             level.makePlan();
             level.setTitle(module.levels[i], 0 == progress ? module.textColorInactive : module.textColorActive);
             if (progress == maxProgress) {
-                module.icons[i].setColorFilter(ContextCompat.getColor(getContext(), R.color.yellow1), PorterDuff.Mode.SRC_ATOP);
+                module.icons[i].setColorFilter(ContextCompat.getColor(getContext(), R.color.yellow2), PorterDuff.Mode.SRC_ATOP);
             }
             level.updateIco(null, module.icons[i]);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT);
@@ -117,10 +131,23 @@ public class ModuleView extends LinearLayout {
         }
     }
 
+    /**
+     * The module data
+     */
     static class Module {
+        /**
+         * The module type
+         */
+        final int moduleType;
+
         final String title;
         @DrawableRes
         final int progressActive;
+
+        /**
+         * The background drawable for the continue to current level button
+         */
+        final Drawable buttonBg;
         final Drawable bgActive;
         final Drawable progressInactive;
         final Drawable bgInactive;
@@ -131,8 +158,27 @@ public class ModuleView extends LinearLayout {
         final int textColorInactive;
         final int textColorActive;
 
-        Module(String title, @DrawableRes int progressActive, Drawable bg, Drawable progressInactive, Drawable bgInactive, Drawable[] icons, String[] levels, int[] progress, int[] maxProgress, int textColorInactive, int textColorActive) {
+        /**
+         * Constructor
+         *
+         * @param moduleType the module type
+         * @param title the module title
+         * @param buttonBg the button background
+         * @param progressActive the active progress resource
+         * @param bg the background
+         * @param progressInactive the inactive progress resource
+         * @param bgInactive the inactive background
+         * @param icons the icons
+         * @param levels the levels
+         * @param progress the progress
+         * @param maxProgress the max progress
+         * @param textColorInactive the inactive text color
+         * @param textColorActive the active text color
+         */
+        Module(int moduleType, String title, Drawable buttonBg, @DrawableRes int progressActive, Drawable bg, Drawable progressInactive, Drawable bgInactive, Drawable[] icons, String[] levels, int[] progress, int[] maxProgress, int textColorInactive, int textColorActive) {
+            this.moduleType = moduleType;
             this.title = title;
+            this.buttonBg = buttonBg;
             this.progressActive = progressActive;
             this.bgActive = bg;
             this.progressInactive = progressInactive;

@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.assessment_intro;
 
 import android.content.Context;
@@ -14,18 +17,25 @@ import com.topcoder.disasterprep.IntentExtras;
 import com.topcoder.disasterprep.NavigationView;
 import com.topcoder.disasterprep.R;
 import com.topcoder.disasterprep.login.LoginActivity;
-import com.topcoder.disasterprep.module.bc.LockableViewPager;
+import com.topcoder.disasterprep.module.submodule.LockableViewPager;
 
 import java.util.List;
 
+/**
+ * The activity for the landing assessment screens before login.
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 public class AssessmentActivity extends AppCompatActivity implements AssessmentView {
 
     private IndicatorProgressView mProgress;
-    private ImageView mGradeFace;
-    private SeekBar mGradeSeek;
-    private TextView mGradeTitle;
-    private TextView mGradeHint;
     private NavigationView mNavigationView;
+
+    /**
+     * The custom view for the slider
+     */
+    private GradeAnswerSeekView mSeekView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,13 +46,13 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
         new AssessmentPresenter(this);
     }
 
+    /**
+     * Do some initialization
+     */
     private void initViews() {
         mProgress = (IndicatorProgressView) findViewById(R.id.progress);
-        mGradeFace = (ImageView) findViewById(R.id.grade_face);
-        mGradeTitle = (TextView) findViewById(R.id.grade_title);
-        mGradeHint = (TextView) findViewById(R.id.grade_hint);
-        mGradeSeek = (SeekBar) findViewById(R.id.seek);
         mNavigationView = (NavigationView) findViewById(R.id.navigation);
+        mSeekView = (GradeAnswerSeekView) findViewById(R.id.seekView);
     }
 
     @Override
@@ -73,7 +83,7 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
                     @Override
                     public void setStep(int step) {
                         mProgress.setStep(step);
-                        mGradeSeek.setProgress(0);
+                        mSeekView.setProgress(0);
                     }
                 });
     }
@@ -83,40 +93,14 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
         return this;
     }
 
+    /**
+     * Initialize the data for the seek view
+     *
+     * @param grades the grades data
+     */
     @Override
     public void initGrade(final List<Grade> grades) {
-        setGrade(grades.get(0));
-        mGradeSeek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                int shiftIco;
-                int shiftTitle;
-                if (0 == progress) {
-                    shiftIco = 0;
-                    shiftTitle = 0;
-                } else if (seekBar.getMax() == progress) {
-                    shiftIco = mGradeFace.getWidth();
-                    shiftTitle = mGradeTitle.getWidth();
-                } else {
-                    shiftIco = mGradeFace.getWidth() / 2;
-                    shiftTitle = mGradeTitle.getWidth() / 2;
-                }
-                setGrade(grades.get(progress));
-                mGradeFace.setX(progress * seekBar.getWidth() / seekBar.getMax() - shiftIco);
-                mGradeTitle.setX(progress * seekBar.getWidth() / seekBar.getMax() - shiftTitle);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
+        mSeekView.setGrades(grades);
     }
 
     @Override
@@ -131,12 +115,5 @@ public class AssessmentActivity extends AppCompatActivity implements AssessmentV
         Intent intent = new Intent(this, LoginActivity.class);
         intent.putExtra(IntentExtras.LOGIN_LOGIN, true);
         startActivity(intent);
-    }
-
-    private void setGrade(Grade grade) {
-        mGradeTitle.setText(grade.getTitle());
-        mGradeFace.setImageDrawable(grade.getIcon());
-        mGradeFace.setBackground(grade.getBg());
-        mGradeHint.setText(grade.getHint());
     }
 }

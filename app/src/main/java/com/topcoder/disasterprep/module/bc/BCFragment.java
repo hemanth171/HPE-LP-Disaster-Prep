@@ -1,105 +1,109 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.module.bc;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.topcoder.disasterprep.NavigationView;
 import com.topcoder.disasterprep.R;
-import com.topcoder.disasterprep.module.ModuleView;
+import com.topcoder.disasterprep.dashboard.DashboardModel;
+import com.topcoder.disasterprep.module.submodule.SubModuleFragment;
 
-public class BCFragment extends android.app.Fragment implements BCView {
+/**
+ * The fragment for the Business Continuity Plan module.
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
+public class BCFragment extends SubModuleFragment {
 
-    public static final String BC_LEVEL = "bc_level";
-    private LockableViewPager mPager;
-    private NavigationView mNavigation;
-    private BCPresenter mPresenter;
-    private int level;
-    private BCAdapter mAdapter;
+    /**
+     * The level 1 page fragments
+     */
+    private static final int[] LEVEL_1_FRAGMENTS = {
+            R.layout.view_module_bc_step_1,
+            R.layout.view_module_bc_step_2,
+            R.layout.view_module_bc_step_3,
+            R.layout.view_module_bc_step_4,
+            R.layout.view_module_bc_step_5,
+            R.layout.view_module_bc_step_6,
+            R.layout.view_module_bc_step_7,
+            R.layout.view_module_bc_step_8,
+            R.layout.view_module_bc_step_9,
+            R.layout.view_module_bc_step_10,
+            R.layout.view_module_bc_step_11
+    };
 
-    public static BCFragment newInstance(int level) {
-        Bundle args = new Bundle();
-        args.putInt(BC_LEVEL, level);
+    /**
+     * The level 2 page fragments
+     */
+    private static final int[] LEVEL_2_FRAGMENTS = {
+            R.layout.view_module_bc_2_step_1,
+            R.layout.view_module_bc_2_step_2,
+            R.layout.view_module_bc_2_step_3,
+            R.layout.view_module_bc_2_step_4,
+            R.layout.view_module_bc_2_step_5,
+            R.layout.view_module_bc_2_step_6,
+            R.layout.view_module_bc_2_step_7
+    };
 
-        BCFragment fragment = new BCFragment();
-        fragment.setArguments(args);
-        return fragment;
+    /**
+     * Create a new instance of fragment showing the given page of on given level
+     *
+     * @param level the level
+     * @param page the page
+     * @return the fragment
+     */
+    public static BCFragment newInstance(int level, int page) {
+        return (BCFragment) SubModuleFragment.newInstance(level, page, new BCFragment());
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Bundle args = getArguments();
-        if (null != args) {
-            level = args.getInt(BC_LEVEL, 1);
+    /**
+     * Return the module type
+     *
+     * @return the module type
+     */
+    protected int getModuleType() {
+        return DashboardModel.BC_MODULE_TYPE;
+    }
+
+    /**
+     * Return the module title.
+     *
+     * @return the module title.
+     */
+    protected String getModuleTitle() {
+        return "Business Continuity Planning";
+    }
+
+    /**
+     * Return the button background drawable resource id (for skip button)
+     *
+     * @return  the button background drawable resource id
+     */
+    protected int getButtonBackground() {
+        return R.drawable.button_bg1;
+    }
+
+    /**
+     * Return the layout fragment resource id
+     *
+     * @return the layout fragment resource id
+     */
+    protected int getLayoutFragment() {
+        return R.layout.fragment_bc;
+    }
+
+    /**
+     * Return the page (or step) fragments of given level
+     *
+     * @param level the level
+     * @return the page (or step) fragments
+     */
+    protected int[] getStepFragments(int level) {
+        if (level == 1) {
+            return LEVEL_1_FRAGMENTS;
         } else {
-            level = 1;
+            // level == 2
+            return LEVEL_2_FRAGMENTS;
         }
-    }
-
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_bc, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        initViews(view);
-        mPresenter = new BCPresenter(this, level);
-    }
-
-    private void initViews(View view) {
-        mPager = (LockableViewPager) view.findViewById(R.id.pager);
-        mNavigation = (NavigationView) view.findViewById(R.id.navigation);
-    }
-
-    @Override
-    public void setSteps(int[] steps, int[] ids, int page) {
-        mAdapter = new BCAdapter(this.level, steps);
-        View.OnClickListener OrOptionListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPresenter.onOrOptionClicked(view.getId());
-            }
-        };
-        mAdapter.setListener(page, OrOptionListener, ids);
-        mPager.setAdapter(mAdapter);
-        mNavigation.showProgress(true);
-        mNavigation.setPager(mPager,
-                new NavigationView.ResultListener() {
-                    @Override
-                    public void showResult() {
-                        ((ModuleView) getActivity()).showModuleResult(BCFragment.this.level);
-                        mPresenter.onShowResult(BCFragment.this.level, mPager.getAdapter().getCount() - 1);
-                    }
-
-                    @Override
-                    public void showSkip() {
-                        ((ModuleView) getActivity()).showSkip();
-                    }
-                },
-                new NavigationView.StepListener() {
-                    @Override
-                    public void setStep(int step) {
-                        mPresenter.onPageSelected(BCFragment.this.level, step - 1);
-                    }
-                });
-    }
-
-    @Override
-    public void lockView(boolean isLock) {
-        mNavigation.lock(isLock);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        ((ModuleView) getActivity()).showHelpMenu(true);
-        ((ModuleView) getActivity()).setTitle("Business Continuity Planning");
     }
 }
