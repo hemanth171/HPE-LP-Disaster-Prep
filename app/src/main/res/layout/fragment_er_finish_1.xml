@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cr_intro_1_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Awesome!"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:src="@drawable/er_lv1_badge"/>
+
+        <TextView
+            style="@style/Font.Header3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="Level 1 Badge"
+            android:textColor="@color/white"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Now it is time to test and reflect on all that learning and achieve your Level One Investor in Resilience status.\n\nThinking about how your employees might help you to survive and thrive is vital to resilience building. We'll be working more on how to improve employee resilience in Level 2"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/next"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_red_bg"
+            android:text="go to next module"/>
+
+        <Button
+            android:id="@+id/dashboard"
+            style="@style/Font.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg2"
+            android:text="go to dashboard"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

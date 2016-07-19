@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.login;
 
 import android.app.Fragment;
@@ -11,8 +14,15 @@ import com.topcoder.disasterprep.IntentExtras;
 import com.topcoder.disasterprep.R;
 import com.topcoder.disasterprep.assessment_intro.AssessmentActivity;
 import com.topcoder.disasterprep.dashboard.DashboardActivity;
+import com.topcoder.disasterprep.dashboard.DashboardModel;
 import com.topcoder.disasterprep.module.ModuleActivity;
 
+/**
+ * The activity for the login pages.
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 public class LoginActivity extends AppCompatActivity
         implements LoginView {
     private static final String LANDING_TAG = "landing_tag";
@@ -20,6 +30,11 @@ public class LoginActivity extends AppCompatActivity
     private static final String SIGNUP_TAG = "signup_tag";
     private static final String FIRST_TIME_TAG = "first_time_tag";
     private static final String SCORE_TAG = "score_tag";
+
+    /**
+     * The forgot password tag
+     */
+    private static final String FORGOT_PASSWORD_TAG = "forgot_password_tag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +58,22 @@ public class LoginActivity extends AppCompatActivity
         FragmentTransaction fragmentTransaction = fragManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
         fragmentTransaction.replace(R.id.container, replacingFragment, LANDING_TAG);
+        fragmentTransaction.commit();
+    }
+
+    /**
+     * Show the forgot password screen.
+     */
+    @Override
+    public void showForgotPassword() {
+        FragmentManager fragManager = getFragmentManager();
+        Fragment replacingFragment = fragManager.findFragmentByTag(FORGOT_PASSWORD_TAG);
+        if (null == replacingFragment) {
+            replacingFragment = new ForgotPasswordFragment();
+        }
+        FragmentTransaction fragmentTransaction = fragManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+        fragmentTransaction.replace(R.id.container, replacingFragment, FORGOT_PASSWORD_TAG);
         fragmentTransaction.commit();
     }
 
@@ -100,11 +131,12 @@ public class LoginActivity extends AppCompatActivity
         fragmentTransaction.commit();
     }
 
+    /**
+     * Show the BC module screen.
+     */
     @Override
     public void showBCModule() {
-        Intent start = new Intent(this, ModuleActivity.class);
-        start.putExtra(IntentExtras.MODULE_BC, true);
-        start.putExtra(IntentExtras.MODULE_INTRO, true);
+        Intent start = ModuleActivity.newIntentFromStart(this, DashboardModel.BC_MODULE_TYPE);
         startActivity(start);
     }
 

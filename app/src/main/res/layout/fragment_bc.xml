@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.topcoder.disasterprep.module.bc.LockableViewPager
+    <com.topcoder.disasterprep.module.submodule.LockableViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"

@@ -16,15 +16,39 @@
         android:text="Business Continuity Planning\nLevel 2"
         android:textColor="@color/white"/>
 
-    <TextView
-        style="@style/Font.SubHeader2"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="32dp"
-        android:paddingBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center_vertical"
-        android:textColor="@color/white"
-        android:text="A little bit of pre-planning can help you to master crises with barely a sweat. Your first priority is the well-being of your people, followed by the restoration of core operations\n\nIn Level One you worked on some leadership and culture basics: leadership, innovation and creativity, and staff engagement. These features will help you and your team survive a crisis."/>
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="No matter how well you have thought through (or planned) for a crisis, the successful recovery of your organisation needs people to make it happen." />
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textColor="@color/white"
+            android:text="In Level One you worked on some leadership and culture basics: leadership, innovation and creativity, and staff engagement. These features will help you and your team survive a crisis." />
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            android:text="Next we are going to look at the basics of creating an empowered team that can make critical decisions and can detect challenges that might affect your organisation in the future."/>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/start"

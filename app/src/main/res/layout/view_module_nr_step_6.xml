@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="Leveraging Knowledge"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Are there 1 or 2 people within your department or organisation that are the linchpins of your ability to operate? If they were injured or unavailable during a crisis (or at any other time), could you cope?\n\nTest out just how dependent you are on key staff. Assign one or two of your valued employees to other duties for half a day (or give them the morning off – they deserve it!) and see how the team copes with the person missing."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="How did you do?"/>
+
+        <com.topcoder.disasterprep.assessment_intro.GradeAnswerSeekView
+            android:id="@+id/seekView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

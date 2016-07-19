@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="Effective Partnerships"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nr_lv1_banner">
+
+            <TextView
+                style="@style/Font.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:alpha="0.8"
+                android:background="@color/blue2"
+                android:padding="@dimen/margin_small"
+                android:text="How do you approach relations with other organisations - do you work to actively build respecting and trusting relationships: with neighbours? Suppliers? Competitors? Your local community?"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/nr_lv1_s1_challenge_text"
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_yellow_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:text="We already do this regularly"
+            android:textColor="@drawable/button_yellow_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_yellow_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:padding="@dimen/margin_small"
+            android:text="Done - I have talked to a key partner"
+            android:textColor="@drawable/button_yellow_text_color"
+            android:clickable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="If this is uncomfortable for you, then start with an easy one contact a key customer or key supplier and just say that you wanted to check in with how satisfied they are with how your two organisations are working together"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Frequency of planned future contact"/>
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            tools:showIn="@layout/view_module_bc_step_3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_bg"
+                android:drawableRight="@drawable/icn_yellow_dropdown"
+                android:paddingRight="12dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:entries="@array/frequency"
+                android:padding="8dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

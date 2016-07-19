@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/lc_intro_2_bg"
+    tools:context=".module.lc.LCIntroFragment">
+
+
+    <TextView
+        style="@style/Font.Header3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Leadership and Culture\nLevel 2"
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:gravity="center_vertical"
+        android:text="No matter how well you have thought through (or planned) for a crisis, the successful recovery of your organisation needs people to make it happen."
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:text="In Level One you worked on some leadership and culture basics: leadership, innovation and creativity, and staff engagement. These features will help you and your team survive a crisis."
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        android:gravity="center_vertical"
+        android:text="Next we are going to look at the basics of creating an empowered team that can make critical decisions and can detect challenges that might affect your organisation in the future."
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/start"
+        style="@style/Font.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green_bg"
+        android:text="get started"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

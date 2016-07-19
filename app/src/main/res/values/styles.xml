@@ -8,6 +8,30 @@
         <item name="colorAccent">@color/blue4</item>
     </style>
 
+    <style name="AppTheme.LC" parent="AppTheme.NoTitleBar">
+        <item name="colorPrimary">@color/green1</item>
+        <item name="colorPrimaryDark">@color/green1_clicked</item>
+        <item name="colorAccent">@color/green2</item>
+    </style>
+
+    <style name="AppTheme.NR" parent="AppTheme.NoTitleBar">
+        <item name="colorPrimary">@color/yellow1</item>
+        <item name="colorPrimaryDark">@color/yellow1_clicked</item>
+        <item name="colorAccent">@color/yellow2</item>
+    </style>
+
+    <style name="AppTheme.ER" parent="AppTheme.NoTitleBar">
+        <item name="colorPrimary">@color/red1</item>
+        <item name="colorPrimaryDark">@color/red1_clicked</item>
+        <item name="colorAccent">@color/red2</item>
+    </style>
+
+    <style name="AppTheme.CR" parent="AppTheme.NoTitleBar">
+        <item name="colorPrimary">@color/orange1</item>
+        <item name="colorPrimaryDark">@color/orange1_clicked</item>
+        <item name="colorAccent">@color/orange2</item>
+    </style>
+
     <style name="AppTheme.NoTitleBar">
         <item name="windowNoTitle">true</item>
         <item name="android:windowNoTitle">true</item>

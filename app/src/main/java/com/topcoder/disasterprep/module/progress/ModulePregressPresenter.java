@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.module.progress;
 
 import android.os.Bundle;
@@ -8,20 +11,26 @@ import com.topcoder.disasterprep.module.ModuleModel;
 
 import java.util.Set;
 
+/**
+ * The presenter for the module progress activity
+ *
+ * @author TCSCODER
+ * @version 1.0
+ */
 class ModulePregressPresenter extends Presenter<ModuleProgressView> {
 
-    public ModulePregressPresenter(ModuleProgressView view, int level) {
+    /**
+     * Constructor
+     *
+     * @param view the module progress view
+     * @param level the current level
+     * @param moduleType the module type
+     */
+    public ModulePregressPresenter(ModuleProgressView view, int level, int moduleType) {
         super(view);
-        Bundle bundle = view.getIntentBundle();
-        if (null != bundle) {
-            Set<String> keys = bundle.keySet();
-            if (keys.contains(IntentExtras.MODULE_TYPE)) {
-                if (IntentExtras.MODULE_TYPE_BC == bundle.getInt(IntentExtras.MODULE_TYPE)) {
-                    ModuleModel.LevelInfo info = ModuleModel.getInstance().getBCLevelInfo(level);
-                    view.setPageTitle(info.title);
-                    view.setProgress(info.pages);
-                }
-            }
-        }
+
+        ModuleModel.LevelInfo info = ModuleModel.getInstance().getModule(moduleType).getLevel(level);
+        view.setPageTitle(info.title);
+        view.setProgress(info.pages);
     }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topcoder.disasterprep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.topcoder.disasterprep.module.submodule.LockableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/grey2"/>
+
+    <com.topcoder.disasterprep.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:prevButtonDrawable="@drawable/red_prev_bg"
+        custom:nextButtonDrawable="@drawable/red_next_bg"
+        custom:progressBarDrawable="@drawable/progress_red"/>
+
+</LinearLayout>

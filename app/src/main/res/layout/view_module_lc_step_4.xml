@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="Staff Engagement"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/module_lc_1_bg">
+
+            <TextView
+                style="@style/Font.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:alpha="0.8"
+                android:background="@color/blue2"
+                android:padding="@dimen/margin_small"
+                android:text="You cannot have all of the ideas or solutions yourself - two (or more) heads are better than one"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Think of a work problem you have been trying to solve. Get together 2 or 3 staff members to discuss the problem with." />
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="I don’t have any staff at a level that would be able to help"
+            android:textColor="@drawable/button_green_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="Done! - It was great to get some fresh ideas and perspectives"
+            android:textColor="@drawable/button_green_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_border_bg"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Skip this section"
+            android:textColor="@drawable/button_green_text_color"
+            android:clickable="true"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="In a crisis situation it is very likely that you will be overwhelmed by the number and magnitude of decisions to be taken. You need to utilise the talents, knowledge and skills of your staff. This will have benefits in business as usual as well - staff will feel trusted and empowered to take charge of their work and will have increased sense of ownership in the business."/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

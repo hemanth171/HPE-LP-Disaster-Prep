@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/Font.Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="Effective Partnership"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Think about the scenario for this level.  Think about people outside your organisation you would lean on to help you through this.   This could be people you know well or people you don’t know well."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/margin_small"
+            android:layout_gravity="right"
+            android:text="Add Question"
+            android:drawablePadding="@dimen/margin_small"
+            android:drawableLeft="@drawable/icn_add_yellow"
+            android:textColor="@color/yellow1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                style="@style/Font.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_gravity="top"
+                android:text="Who?"/>
+
+            <EditText
+                style="@style/Font.SubHeader1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:background="@drawable/spinner_bg"
+                android:gravity="top"
+                android:hint="e.g. local GP, local real estate agent, local MP, industry group CE"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/margin_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                style="@style/Font.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="Why?"/>
+
+            <EditText
+                style="@style/Font.SubHeader1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:background="@drawable/spinner_bg"
+                android:gravity="top"
+                android:hint="Type here..."
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/margin_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                style="@style/Font.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="Do you know well?"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    style="@style/Font.SubHeader1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_yes"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/no"
+                    style="@style/Font.SubHeader1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/button_no"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="No"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1"/>
+
+        <TextView
+            style="@style/Font.SubHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Did you identify people you don’t know well?  Then it is time to expand your network.  If you needed them in this scenario, you will need them in others.  Make an appointment to talk to them and work out how you can enhance your relationship with them."/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

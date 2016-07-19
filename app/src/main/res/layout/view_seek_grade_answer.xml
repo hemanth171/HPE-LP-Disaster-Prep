@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:clipChildren="false">
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:max="4"
+            android:progress="0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/rect_face_slider"/>
+
+        <ImageView
+            android:id="@+id/grade_face"
+            android:layout_width="@dimen/grade_width"
+            android:layout_height="@dimen/grade_width"
+            android:background="@drawable/circle_grey"
+            android:src="@drawable/grade_ico_1"/>
+
+        <TextView
+            android:id="@+id/grade_title"
+            style="@style/Font.Grade"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:text="I don't know"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/grade_hint"
+        style="@style/Font.Body3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        tools:text="We have successfully done this before"/>
+
+</LinearLayout>

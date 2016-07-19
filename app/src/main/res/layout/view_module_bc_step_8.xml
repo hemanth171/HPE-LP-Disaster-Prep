@@ -44,12 +44,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.SubHeader1"
+                    style="@style/Font.Body1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="@string/module_bc_step_8_p1"
+                    android:text="Aenean euismod"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>
@@ -74,12 +74,12 @@
                     android:checked="false"/>
 
                 <TextView
-                    style="@style/Font.SubHeader1"
+                    style="@style/Font.Body1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="@dimen/margin_small"
-                    android:text="@string/module_bc_step_8_p2"
+                    android:text="Proin gravida dolor"
                     android:textColor="@color/blue1"/>
 
             </LinearLayout>

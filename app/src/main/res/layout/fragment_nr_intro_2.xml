@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/nr_lv2_bg"
+    tools:context=".module.lc.LCIntroFragment">
+
+
+    <TextView
+        style="@style/Font.Header3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:text="Networks and Relationships\nLevel 2"
+        android:textColor="@color/white"/>
+
+    <TextView
+        style="@style/Font.SubHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="center_vertical"
+        android:text="Positive relationships both within your organisation and with other organisations can provide valuable support during crises.  They can also be great sources for inspiration and new ideas. When the chips are down during a crisis, those who work together tend to come out better off!\n\nIn Level One, we began to see how important our internal and external organisational networks are in a crisis.  They help us get through by being a valuable source of resources and support.  In Level Two the focus will be on getting used to working with a variety of people day to day"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/start"
+        style="@style/Font.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_yellow_bg"
+        android:text="get started"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

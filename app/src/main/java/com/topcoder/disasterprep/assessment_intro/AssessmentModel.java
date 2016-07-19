@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
+ */
 package com.topcoder.disasterprep.assessment_intro;
 
 import android.content.Context;
@@ -10,9 +13,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class AssessmentModel {
+/**
+ * The model for the landing assessment screens before login.
+ */
+public class AssessmentModel {
 
-    static List<Grade> getGrades(Context context) {
+    public static List<Grade> getGrades(Context context) {
         return new ArrayList<>(Arrays.asList(
                 new Grade("I don't know", getDrawable(context, R.drawable.grade_ico_1), "", getDrawable(context, R.drawable.circle_grey)),
                 new Grade("No", getDrawable(context, R.drawable.grade_ico_2), "They know very little about the organization", getDrawable(context, R.drawable.circle_red)),
